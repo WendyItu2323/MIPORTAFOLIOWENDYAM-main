@@ -1,141 +1,513 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<html><head><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.51-0 [XR&CO] -->
-	<style type="text/css">
-	<!--
-
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
+#wendy-portfolio {
+  --wp-bg: #f6f1e9;
+  --wp-paper: #fffdf8;
+  --wp-cream: #eee5d8;
+  --wp-sand: #dfd0bd;
+  --wp-taupe: #a68f78;
+  --wp-brown: #5b4434;
+  --wp-ink: #29231f;
+  --wp-muted: #756b62;
+  --wp-line: rgba(91,68,52,.16);
+  --wp-gold: #b58b5b;
+  color: var(--wp-ink);
+  background: var(--wp-bg);
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow: hidden;
 }
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+#wendy-portfolio * { box-sizing: border-box; }
+#wendy-portfolio img { display: block; max-width: 100%; height: auto; }
+#wendy-portfolio a { color: inherit; text-decoration: none; }
+#wendy-portfolio button,
+#wendy-portfolio input,
+#wendy-portfolio textarea { font: inherit; }
+#wendy-portfolio .wp-container { width: min(1160px, calc(100% - 48px)); margin: 0 auto; }
+#wendy-portfolio .wp-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  color: var(--wp-gold); font-size: 11px; font-weight: 700;
+  letter-spacing: .22em; text-transform: uppercase;
+}
+#wendy-portfolio .wp-eyebrow:before { content: ''; width: 28px; height: 1px; background: currentColor; }
+#wendy-portfolio h1, #wendy-portfolio h2, #wendy-portfolio h3 {
+  margin: 0; font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500; line-height: 1.12; letter-spacing: -.025em;
+}
+#wendy-portfolio h1 { font-size: clamp(54px, 8vw, 98px); }
+#wendy-portfolio h2 { font-size: clamp(38px, 5vw, 62px); }
+#wendy-portfolio h3 { font-size: 25px; }
+#wendy-portfolio p { margin: 0; }
+#wendy-portfolio .wp-section { padding: 108px 0; }
+#wendy-portfolio .wp-section-heading { max-width: 690px; margin-bottom: 48px; }
+#wendy-portfolio .wp-section-heading h2 { margin-top: 14px; }
+#wendy-portfolio .wp-section-heading p { margin-top: 16px; color: var(--wp-muted); max-width: 540px; }
+#wendy-portfolio .wp-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+  min-height: 49px; padding: 0 24px; border: 1px solid var(--wp-brown);
+  border-radius: 2px; background: var(--wp-brown); color: #fffaf2 !important;
+  font-size: 11px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase;
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+#wendy-portfolio .wp-btn:hover { background: transparent; color: var(--wp-brown) !important; transform: translateY(-2px); }
+#wendy-portfolio .wp-btn.wp-btn-light { background: #f8f1e7; border-color: #f8f1e7; color: var(--wp-brown) !important; }
+#wendy-portfolio .wp-btn.wp-btn-light:hover { background: transparent; color: #fff !important; }
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
+/* Navigation */
+#wendy-portfolio .wp-nav {
+  position: sticky; top: 0; z-index: 50; background: rgba(255,253,248,.94);
+  border-bottom: 1px solid var(--wp-line); backdrop-filter: blur(14px);
+}
+#wendy-portfolio .wp-nav-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+#wendy-portfolio .wp-brand { display: inline-flex; align-items: center; gap: 12px; }
+#wendy-portfolio .wp-brand img { width: 112px; max-height: 42px; object-fit: contain; object-position: left center; }
+#wendy-portfolio .wp-brand-name { font-family: 'Playfair Display', Georgia, serif; font-size: 25px; letter-spacing: .02em; }
+#wendy-portfolio .wp-nav-links { display: flex; align-items: center; gap: clamp(15px, 2.5vw, 34px); }
+#wendy-portfolio .wp-nav-links a { color: var(--wp-muted); font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; transition: color .2s ease; }
+#wendy-portfolio .wp-nav-links a:hover { color: var(--wp-gold); }
+#wendy-portfolio .wp-menu-toggle { display: none; border: 1px solid var(--wp-line); background: transparent; color: var(--wp-brown); padding: 9px 12px; border-radius: 2px; cursor: pointer; }
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
+/* Hero */
+#wendy-portfolio .wp-hero {
+  position: relative; min-height: min(760px, 82vh); display: flex; align-items: center;
+  background: linear-gradient(90deg, rgba(28,24,20,.76), rgba(28,24,20,.42) 54%, rgba(28,24,20,.12)),
+              url('wp-content/uploads/2024/01/bacgroun.png') center 42% / cover no-repeat;
+  color: #fffaf2;
+}
+#wendy-portfolio .wp-hero:after { content: ''; position: absolute; inset: 18px; border: 1px solid rgba(255,250,242,.36); pointer-events: none; }
+#wendy-portfolio .wp-hero-content { position: relative; z-index: 1; max-width: 760px; padding: 110px 0 120px; }
+#wendy-portfolio .wp-hero .wp-eyebrow { color: #e5cba8; }
+#wendy-portfolio .wp-hero h1 { margin: 22px 0 18px; }
+#wendy-portfolio .wp-hero h1 em { color: #ead8c1; font-style: normal; }
+#wendy-portfolio .wp-hero-subtitle { max-width: 510px; color: rgba(255,250,242,.86); font-family: 'Playfair Display', Georgia, serif; font-size: clamp(20px, 2.4vw, 27px); line-height: 1.45; }
+#wendy-portfolio .wp-hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 32px; }
+#wendy-portfolio .wp-hero-note { margin-top: 58px; color: rgba(255,250,242,.62); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; }
+#wendy-portfolio .wp-hero-side-image { position: absolute; right: max(6%, calc((100vw - 1160px)/2)); bottom: 0; width: clamp(130px, 18vw, 230px); max-height: 240px; object-fit: cover; object-position: center top; opacity: .86; border: 8px solid rgba(255,250,242,.82); box-shadow: 0 18px 50px rgba(0,0,0,.2); }
 
-#siteNavigation .current { background-color: #ccd; }
+/* Story */
+#wendy-portfolio .wp-story { background: var(--wp-paper); }
+#wendy-portfolio .wp-story-grid { display: grid; grid-template-columns: .95fr 1.05fr; align-items: center; gap: clamp(42px, 8vw, 104px); }
+#wendy-portfolio .wp-story-photos { position: relative; min-height: 500px; }
+#wendy-portfolio .wp-story-main { width: 78%; height: 430px; object-fit: cover; object-position: center; border-radius: 2px; box-shadow: 0 20px 55px rgba(62,45,31,.12); }
+#wendy-portfolio .wp-story-secondary { position: absolute; width: 48%; height: 210px; right: 0; bottom: 0; object-fit: cover; border: 9px solid var(--wp-paper); box-shadow: 0 15px 45px rgba(62,45,31,.15); }
+#wendy-portfolio .wp-story-copy h2 { margin: 14px 0 22px; }
+#wendy-portfolio .wp-story-copy p { color: var(--wp-muted); max-width: 560px; }
+#wendy-portfolio .wp-story-quote { margin-top: 35px; padding: 22px 26px; border-left: 2px solid var(--wp-gold); color: var(--wp-brown); background: var(--wp-bg); font-family: 'Playfair Display', Georgia, serif; font-size: 21px; font-style: italic; }
 
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+/* Projects */
+#wendy-portfolio .wp-projects { background: #29231f; color: #fffaf2; }
+#wendy-portfolio .wp-projects .wp-section-heading p { color: rgba(255,250,242,.66); }
+#wendy-portfolio .wp-project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+#wendy-portfolio .wp-project-card { min-width: 0; background: #352d27; border: 1px solid rgba(255,250,242,.12); transition: transform .28s ease, border-color .28s ease; }
+#wendy-portfolio .wp-project-card:hover { transform: translateY(-6px); border-color: rgba(218,185,145,.65); }
+#wendy-portfolio .wp-project-card img { width: 100%; height: 205px; object-fit: cover; filter: saturate(.78); }
+#wendy-portfolio .wp-project-text { padding: 23px 23px 26px; }
+#wendy-portfolio .wp-project-index { color: #c4a47d; font-size: 10px; letter-spacing: .17em; }
+#wendy-portfolio .wp-project-text h3 { margin: 9px 0 10px; color: #fffaf2; font-size: 23px; }
+#wendy-portfolio .wp-project-text p { color: rgba(255,250,242,.68); font-size: 14px; line-height: 1.7; }
+#wendy-portfolio .wp-project-feature { grid-column: span 2; display: grid; grid-template-columns: 1fr 1fr; }
+#wendy-portfolio .wp-project-feature img { height: 100%; min-height: 250px; }
+#wendy-portfolio .wp-project-feature .wp-project-text { align-self: center; padding: clamp(22px, 4vw, 44px); }
+#wendy-portfolio .wp-project-wide { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr 1fr; }
+#wendy-portfolio .wp-project-wide img { height: 220px; }
 
+/* Community */
+#wendy-portfolio .wp-community { background: var(--wp-cream); }
+#wendy-portfolio .wp-community-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+#wendy-portfolio .wp-community-card { background: var(--wp-paper); border: 1px solid var(--wp-line); }
+#wendy-portfolio .wp-community-card img { width: 100%; height: 235px; object-fit: cover; }
+#wendy-portfolio .wp-community-copy { padding: 25px; }
+#wendy-portfolio .wp-community-copy h3 { font-size: 24px; margin-bottom: 10px; }
+#wendy-portfolio .wp-community-copy p { color: var(--wp-muted); font-size: 14px; }
+#wendy-portfolio .wp-community-label { display: block; margin-top: 17px; color: var(--wp-gold); font-size: 10px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
+/* Values */
+#wendy-portfolio .wp-values { background: var(--wp-paper); }
+#wendy-portfolio .wp-values-head { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 45px; }
+#wendy-portfolio .wp-values-head p { max-width: 330px; color: var(--wp-muted); }
+#wendy-portfolio .wp-values-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--wp-line); border-bottom: 1px solid var(--wp-line); }
+#wendy-portfolio .wp-value { padding: 32px 24px 36px; border-right: 1px solid var(--wp-line); }
+#wendy-portfolio .wp-value:last-child { border-right: 0; }
+#wendy-portfolio .wp-value-number { color: var(--wp-gold); font-family: 'Playfair Display', Georgia, serif; font-size: 30px; }
+#wendy-portfolio .wp-value h3 { margin: 15px 0 10px; font-size: 23px; text-transform: uppercase; letter-spacing: .04em; }
+#wendy-portfolio .wp-value p { color: var(--wp-muted); font-size: 14px; }
+#wendy-portfolio .wp-values-quote { margin: 52px auto 0; max-width: 820px; text-align: center; color: var(--wp-brown); font-family: 'Playfair Display', Georgia, serif; font-size: clamp(24px, 3.4vw, 37px); font-style: italic; line-height: 1.35; }
 
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
+/* Contact */
+#wendy-portfolio .wp-contact { position: relative; color: #fffaf2; background: linear-gradient(90deg, rgba(35,28,23,.93), rgba(35,28,23,.78)), url('wp-content/uploads/2024/01/lastbac.jpg') center / cover no-repeat; }
+#wendy-portfolio .wp-contact-grid { display: grid; grid-template-columns: 1fr .9fr; gap: clamp(40px, 7vw, 90px); align-items: start; }
+#wendy-portfolio .wp-contact .wp-eyebrow { color: #e1c49e; }
+#wendy-portfolio .wp-contact h2 { margin: 15px 0 18px; }
+#wendy-portfolio .wp-contact-subheading { margin: 22px 0 12px; color: #e1c49e; font-family: 'DM Sans', Arial, sans-serif; font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+#wendy-portfolio .wp-contact-intro { max-width: 480px; color: rgba(255,250,242,.74); }
+#wendy-portfolio .wp-contact-links { display: grid; gap: 18px; margin-top: 38px; }
+#wendy-portfolio .wp-contact-link { padding-bottom: 16px; border-bottom: 1px solid rgba(255,250,242,.2); }
+#wendy-portfolio .wp-contact-link span { display: block; color: #d8b88f; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+#wendy-portfolio .wp-contact-link a, #wendy-portfolio .wp-contact-link p { display: inline-block; margin-top: 5px; color: #fffaf2; overflow-wrap: anywhere; }
+#wendy-portfolio .wp-form { padding: clamp(24px, 4vw, 42px); background: var(--wp-paper); color: var(--wp-ink); box-shadow: 0 20px 55px rgba(0,0,0,.2); }
+#wendy-portfolio .wp-form h3 { margin-bottom: 24px; font-size: 30px; }
+#wendy-portfolio .wp-field { margin-bottom: 17px; }
+#wendy-portfolio .wp-field label { display: block; margin-bottom: 7px; color: var(--wp-muted); font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+#wendy-portfolio .wp-field input, #wendy-portfolio .wp-field textarea { width: 100%; border: 1px solid #d9cec0; border-radius: 0; outline: none; padding: 12px 13px; background: #fffefa; color: var(--wp-ink); }
+#wendy-portfolio .wp-field input:focus, #wendy-portfolio .wp-field textarea:focus { border-color: var(--wp-gold); box-shadow: 0 0 0 2px rgba(181,139,91,.12); }
+#wendy-portfolio .wp-field textarea { min-height: 125px; resize: vertical; }
+#wendy-portfolio .wp-form .wp-btn { width: 100%; cursor: pointer; }
+#wendy-portfolio .wp-form-note { margin-top: 12px; color: var(--wp-muted); font-size: 11px; }
 
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
+/* Footer */
+#wendy-portfolio .wp-footer { background: #201b17; color: rgba(255,250,242,.75); padding: 25px 0; }
+#wendy-portfolio .wp-footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+#wendy-portfolio .wp-footer-brand { display: inline-flex; align-items: center; gap: 12px; }
+#wendy-portfolio .wp-footer-brand img { width: 86px; max-height: 30px; object-fit: contain; }
+#wendy-portfolio .wp-footer small { font-size: 11px; letter-spacing: .04em; }
+#wendy-portfolio .wp-footer-gallery { display: flex; gap: 5px; }
+#wendy-portfolio .wp-footer-gallery img { width: 37px; height: 37px; object-fit: cover; opacity: .72; }
 
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
+/* Motion and responsive layout */
+#wendy-portfolio .wp-reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s ease; }
+#wendy-portfolio .wp-reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) { #wendy-portfolio .wp-reveal { opacity: 1; transform: none; transition: none; } * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+@media (max-width: 900px) {
+  #wendy-portfolio .wp-project-grid { grid-template-columns: repeat(2, 1fr); }
+  #wendy-portfolio .wp-project-feature { grid-column: span 2; }
+  #wendy-portfolio .wp-values-grid { grid-template-columns: repeat(2, 1fr); }
+  #wendy-portfolio .wp-value:nth-child(2) { border-right: 0; }
+  #wendy-portfolio .wp-value:nth-child(-n+2) { border-bottom: 1px solid var(--wp-line); }
+  #wendy-portfolio .wp-story-grid { gap: 48px; }
+}
+@media (max-width: 700px) {
+  #wendy-portfolio .wp-container { width: min(100% - 34px, 560px); }
+  #wendy-portfolio .wp-section { padding: 76px 0; }
+  #wendy-portfolio .wp-nav-inner { min-height: 68px; }
+  #wendy-portfolio .wp-menu-toggle { display: inline-flex; }
+  #wendy-portfolio .wp-nav-links { display: none; position: absolute; top: 68px; left: 0; right: 0; padding: 18px 24px 24px; background: var(--wp-paper); border-bottom: 1px solid var(--wp-line); flex-direction: column; align-items: flex-start; gap: 18px; }
+  #wendy-portfolio .wp-nav-links.is-open { display: flex; }
+  #wendy-portfolio .wp-hero { min-height: 680px; background-position: 57% center; }
+  #wendy-portfolio .wp-hero-content { padding: 90px 0 220px; }
+  #wendy-portfolio .wp-hero-side-image { right: 8%; width: 125px; height: 150px; bottom: 25px; }
+  #wendy-portfolio .wp-story-grid, #wendy-portfolio .wp-contact-grid { grid-template-columns: 1fr; }
+  #wendy-portfolio .wp-story-photos { min-height: 390px; }
+  #wendy-portfolio .wp-story-main { height: 340px; }
+  #wendy-portfolio .wp-story-secondary { height: 160px; }
+  #wendy-portfolio .wp-project-grid, #wendy-portfolio .wp-community-grid { grid-template-columns: 1fr; }
+  #wendy-portfolio .wp-project-feature, #wendy-portfolio .wp-project-wide { grid-column: auto; grid-template-columns: 1fr; }
+  #wendy-portfolio .wp-project-feature img, #wendy-portfolio .wp-project-wide img { height: 210px; min-height: 0; }
+  #wendy-portfolio .wp-values-head { display: block; }
+  #wendy-portfolio .wp-values-head p { margin-top: 18px; }
+  #wendy-portfolio .wp-value { padding: 25px 16px; }
+  #wendy-portfolio .wp-footer-inner { flex-direction: column; text-align: center; }
+}
 </style>
 
-</head>
+</head><body><div id="wendy-portfolio">
+  <nav class="wp-nav" aria-label="Main navigation">
+    <div class="wp-container wp-nav-inner">
+      <a class="wp-brand" href="#wp-home" aria-label="Wendy — Home">
+        <img src="wp-content/uploads/2024/01/logo-1.svg" alt="Wendy logo">
+        <span class="wp-brand-name">Wendy</span>
+      </a>
+      <button class="wp-menu-toggle" type="button" aria-expanded="false" aria-controls="wp-navigation">Menu</button>
+      <div class="wp-nav-links" id="wp-navigation">
+        <a href="#wp-home">Home</a>
+        <a href="#wp-story">My Story</a>
+        <a href="#wp-projects">Projects</a>
+        <a href="#wp-community">Community</a>
+        <a href="#wp-values">Values</a>
+        <a href="#wp-contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-<body>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+  <header class="wp-hero" id="wp-home">
+    <div class="wp-container">
+      <div class="wp-hero-content wp-reveal is-visible">
+        <span class="wp-eyebrow">Personal Portfolio · 2026</span>
+        <h1>Hi, I'm<br><em>Wendy.</em></h1>
+        <p class="wp-hero-subtitle">I don't wait for opportunities. I create them.</p>
+        <div class="wp-hero-actions">
+          <a class="wp-btn wp-btn-light" href="#wp-story">Get to know me <span aria-hidden="true">↗</span></a>
+          <a class="wp-btn" href="#wp-projects">Explore my work</a>
+        </div>
+        <p class="wp-hero-note">Leadership · Creativity · Community Impact</p>
+      </div>
+    </div>
+  </header>
 
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="cms.code4rest.com/wp58/index.html">
-						Wendy
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.51-0 [XR&CO] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=cms.code4rest.com/wp58/index.html">
+  <main>
+    <section class="wp-section wp-story" id="wp-story">
+      <div class="wp-container wp-story-grid">
+        <div class="wp-story-photos wp-reveal">
+          <img class="wp-story-main" src="wp-content/uploads/2024/01/wendy.png" alt="Wendy portrait">
+          <img class="wp-story-secondary" src="wp-content/uploads/2024/01/wendy2.0.png" alt="A moment from Wendy's journey">
+        </div>
+        <div class="wp-story-copy wp-reveal">
+          <span class="wp-eyebrow">A little about me</span>
+          <h2>My story</h2>
+          <p>I'm Wendy, a high school senior with a passion for leadership, creativity, and making a positive impact. I believe every challenge is an opportunity to grow and every idea has the power to create change. My journey has been shaped by service, teamwork, and the constant desire to become the best version of myself.</p>
+          <blockquote class="wp-story-quote">“Be unforgettable by your actions, not by your words.”</blockquote>
+        </div>
+      </div>
+    </section>
 
+    <section class="wp-section wp-projects" id="wp-projects">
+      <div class="wp-container">
+        <div class="wp-section-heading wp-reveal">
+          <span class="wp-eyebrow">Curiosity in action</span>
+          <h2>Projects &amp; Achievements</h2>
+          <p>Every project represents a challenge transformed into growth.</p>
+        </div>
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+        <div class="wp-project-grid">
+          <article class="wp-project-card wp-project-feature wp-reveal">
+            <img src="wp-content/uploads/2024/01/BIOWILD2.jpg" alt="BIOWILD project">
+            <div class="wp-project-text">
+              <span class="wp-project-index">01 / PROJECT</span>
+              <h3>BIOWILD</h3>
+              <p>Developed an innovative project focused on wildlife conservation through technology and environmental awareness.</p>
+            </div>
+          </article>
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 1998 Xavier Roche &amp; other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+          <article class="wp-project-card wp-reveal">
+            <img src="wp-content/uploads/2024/01/SCIENCEFAIR.jpg" alt="Science fair project">
+            <div class="wp-project-text">
+              <span class="wp-project-index">02 / SCIENCE</span>
+              <h3>Science Fair Project</h3>
+              <p>Designed and presented a scientific project that strengthened my research, creativity, and problem-solving skills.</p>
+            </div>
+          </article>
 
-</body>
+          <article class="wp-project-card wp-reveal">
+            <img src="wp-content/uploads/2024/01/data.jpg" alt="Data analysis work">
+            <div class="wp-project-text">
+              <span class="wp-project-index">03 / ANALYSIS</span>
+              <h3>Data Analysis</h3>
+              <p>Analyzing and interpreting data to support informed decisions.</p>
+            </div>
+          </article>
 
-</html>
+          <article class="wp-project-card wp-reveal">
+            <img src="wp-content/uploads/2024/01/report.jpg" alt="Report writing work">
+            <div class="wp-project-text">
+              <span class="wp-project-index">04 / COMMUNICATION</span>
+              <h3>Report Writing</h3>
+              <p>Preparing well-structured and organized reports.</p>
+            </div>
+          </article>
 
+          <article class="wp-project-card wp-reveal">
+            <img src="wp-content/uploads/2024/01/research.jpg" alt="Research project">
+            <div class="wp-project-text">
+              <span class="wp-project-index">05 / RESEARCH</span>
+              <h3>Research</h3>
+              <p>Gathering and analyzing information from reliable sources.</p>
+            </div>
+          </article>
 
+          <article class="wp-project-card wp-reveal">
+            <img src="wp-content/uploads/2024/01/excel.jpg" alt="Excel Expert work">
+            <div class="wp-project-text">
+              <span class="wp-project-index">06 / DIGITAL SKILLS</span>
+              <h3>Excel Expert</h3>
+              <p>Organizing and managing data efficiently using spreadsheets.</p>
+            </div>
+          </article>
+
+          <article class="wp-project-card wp-project-wide wp-reveal">
+            <img src="wp-content/uploads/2024/01/desing.jpg" alt="Presentation design work">
+            <div class="wp-project-text">
+              <span class="wp-project-index">07 / VISUAL STORYTELLING</span>
+              <h3>Presentation Design</h3>
+              <p>Creating clear, engaging, and professional presentations.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wp-section wp-community" id="wp-community">
+      <div class="wp-container">
+        <div class="wp-section-heading wp-reveal">
+          <span class="wp-eyebrow">Service &amp; connection</span>
+          <h2>Community Impact</h2>
+          <p>Making a difference through service.</p>
+        </div>
+
+        <div class="wp-community-grid">
+          <article class="wp-community-card wp-reveal">
+            <img src="cms.code4rest.com\wp58\wp-content\uploads\2024\01\churchvolunt.png" alt="Church volunteer activities">
+            <div class="wp-community-copy">
+              <h3>Church Volunteer</h3>
+              <p>Serving my community through different church activities.</p>
+              <span class="wp-community-label">Community Service</span>
+            </div>
+          </article>
+
+          <article class="wp-community-card wp-reveal">
+            <img src="cms.code4rest.com\wp58\wp-content\uploads\2024\01\HOGARECODUCA.jpg" alt="Hogar Eco Educa environmental activities">
+            <div class="wp-community-copy">
+              <h3>Hogar Eco Educa</h3>
+              <p>Three years promoting environmental responsibility through recycling initiatives.</p>
+              <span class="wp-community-label">Environmental Responsibility</span>
+            </div>
+          </article>
+
+          <article class="wp-community-card wp-reveal">
+            <img src="cms.code4rest.com\wp58\wp-content\uploads\2024\01\TECHO.png" alt="TECHO Panamá community project">
+            <div class="wp-community-copy">
+              <h3>TECHO Panamá</h3>
+              <p>Helping families through community projects and teamwork.</p>
+              <span class="wp-community-label">Teamwork &amp; Solidarity</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wp-section wp-values" id="wp-values">
+      <div class="wp-container">
+        <div class="wp-values-head wp-reveal">
+          <div>
+            <span class="wp-eyebrow">The principles behind my work</span>
+            <h2>What Drives Me</h2>
+          </div>
+          <p>The values that shape how I learn, lead, collaborate, and contribute.</p>
+        </div>
+
+        <div class="wp-values-grid">
+          <article class="wp-value wp-reveal">
+            <span class="wp-value-number">01</span>
+            <h3>Purpose</h3>
+            <p>I believe every project should create value for people, not just results.</p>
+          </article>
+          <article class="wp-value wp-reveal">
+            <span class="wp-value-number">02</span>
+            <h3>Curiosity</h3>
+            <p>I never stop learning, questioning, and exploring better solutions.</p>
+          </article>
+          <article class="wp-value wp-reveal">
+            <span class="wp-value-number">03</span>
+            <h3>Leadership</h3>
+            <p>Leadership means inspiring action through integrity, empathy, and consistency.</p>
+          </article>
+          <article class="wp-value wp-reveal">
+            <span class="wp-value-number">04</span>
+            <h3>Excellence</h3>
+            <p>I believe details make the difference between something good and something unforgettable.</p>
+          </article>
+        </div>
+
+        <p class="wp-values-quote wp-reveal">“I don't chase perfection. I pursue continuous improvement.”</p>
+      </div>
+    </section>
+
+    <section class="wp-section wp-contact" id="wp-contact">
+      <div class="wp-container wp-contact-grid">
+        <div class="wp-reveal">
+          <span class="wp-eyebrow">Thank you for being here</span>
+          <h2>Thank You.</h2>
+          <h3 class="wp-contact-subheading">Let's Connect</h3>
+          <p class="wp-contact-intro">“The best opportunities begin with curiosity, hard work, and the courage to dream big.”</p>
+
+          <div class="wp-contact-links">
+            <div class="wp-contact-link">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/wendy-carolina-iturriaga-peguero" target="_blank" rel="noopener noreferrer">linkedin.com/in/wendy-carolina-iturriaga-peguero ↗</a>
+            </div>
+            <div class="wp-contact-link">
+              <span>Email</span>
+              <a href="mailto:wendyiturriaga32@gmail.com">wendyiturriaga32@gmail.com</a>
+            </div>
+            <div class="wp-contact-link">
+              <span>Location</span>
+              <p>La Chorrera, Panamá</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="wp-form wp-reveal" id="wendy-contact-form">
+          <h3>Send a message</h3>
+          <div class="wp-field">
+            <label for="wendy-name">Name</label>
+            <input id="wendy-name" name="name" type="text" placeholder="Your name" required="">
+          </div>
+          <div class="wp-field">
+            <label for="wendy-email">Email</label>
+            <input id="wendy-email" name="email" type="email" placeholder="Your email address" required="">
+          </div>
+          <div class="wp-field">
+            <label for="wendy-message">Message</label>
+            <textarea id="wendy-message" name="message" placeholder="Write your message..." required=""></textarea>
+          </div>
+          <button class="wp-btn" type="submit">Send message <span aria-hidden="true">↗</span></button>
+          <p class="wp-form-note">Your email app will open with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wp-footer">
+    <div class="wp-container wp-footer-inner">
+      <a class="wp-footer-brand" href="#wp-home" aria-label="Wendy — back to top">
+        <img src="wp-content/uploads/2024/01/logo.svg" alt="Wendy logo">
+      </a>
+      
+      <small>© 2026 Wendy Iturriaga. All rights reserved.</small>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function () {
+  const root = document.getElementById('wendy-portfolio');
+  if (!root) return;
+
+  const menuButton = root.querySelector('.wp-menu-toggle');
+  const navLinks = root.querySelector('.wp-nav-links');
+
+  if (menuButton && navLinks) {
+    menuButton.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('is-open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  const revealItems = root.querySelectorAll('.wp-reveal');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(function (item) { observer.observe(item); });
+  } else {
+    revealItems.forEach(function (item) { item.classList.add('is-visible'); });
+  }
+
+  const contactForm = root.querySelector('#wendy-contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = root.querySelector('#wendy-name').value.trim();
+      const email = root.querySelector('#wendy-email').value.trim();
+      const message = root.querySelector('#wendy-message').value.trim();
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+      window.location.href = 'mailto:wendyiturriaga32@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  }
+})();
+</script>
+</body></html>
